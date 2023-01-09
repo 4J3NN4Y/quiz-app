@@ -17,23 +17,25 @@ const quizData = [
 
 const questionEl = document.getElementById('question');
 
-const a_text = document.getElementById('a_text');
-const b_text = document.getElementById('b_text');
-const c_text = document.getElementById('c_text');
+const a_label = document.getElementById('a_label');
+const b_label = document.getElementById('b_label');
+const c_label = document.getElementById('c_label');
 
 
-var currentQuiz = 0;
+let currentQuiz = 0;
+
+let randomID = Math.floor(Math.random() * 2);
 
 function loadQuiz() {
-const currentQuizData = quizData[currentQuiz];
+const currentQuizData = quizData[randomID];
   
 questionEl.innerText = currentQuizData.question;
   
-  a_text.innerHTML = currentQuizData.a;
-  b_text.innerHTML = currentQuizData.b;
-  c_text.innerHTML = currentQuizData.c; 
+  a_label.innerHTML = currentQuizData.a;
+  b_label.innerHTML = currentQuizData.b;
+  c_label.innerHTML = currentQuizData.c; 
 
-  currentQuestion++;
+  currentQuiz++;
 }
 
 loadQuiz();
