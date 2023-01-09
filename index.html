@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz-App</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>   
    <div class="quiz-container">
     <div class="quiz-header">
 
-<h2>Question Text</h2>
+<h2 id="question">Question Text</h2>
     <ul>
-        <li><input type="radio" id="a" name="answer"><label for="a">Question</label></li>
-        <li><input type="radio" id="b" name="answer"><label for="b">Question</label></li>
-        <li><input type="radio" id="c" name="answer"><label for="c">Question</label></li>
-        
+        <li><input type="radio" id="a_text"  name="answer"><label id="a_label"
+            for="a_text">Question</label></li>
+        <li><input type="radio" id="b_text" name="answer"><label id="b_label"for="b_text">Question</label></li>
+        <li><input type="radio" id="c_text" name="answer"><label  id="c_label"for="c_text">Question</label></li>
     </ul>
     </div>
     <button>Submit</button>
    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
